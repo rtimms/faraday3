@@ -1,15 +1,16 @@
 import numpy as np
 from scipy import optimize
+import matplotlib.pyplot as plt
 
 
 # whatever the function should be
 def f(x):
-    return (x**3 - 1)
+    return x
 
 
-def mybisection(f, a, b, epsilon):
-    return 1
-
+# def mybisection(f, a, b, epsilon):
+#    return x
 
 root = optimize.newton(f, 1.5)
 
+print(root)
